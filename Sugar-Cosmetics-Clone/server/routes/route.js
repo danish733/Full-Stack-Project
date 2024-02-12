@@ -6,9 +6,7 @@ const getProducts = require('../controller/product-controller')
 
 const router = express.Router();
 
-router.get('/',()=>{
-    resizeBy.send("Home")
-})
+
 router.post('/register', useRegister);
 router.post('/login', useLogin);
 
