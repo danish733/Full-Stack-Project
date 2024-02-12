@@ -161,6 +161,9 @@ const Mrp = styled(Typography)({
   });
 
 function Gifting({products}) {
+  if (!products) {
+    return null; 
+  }
   return (
     <div>
        <SlideWrapper>

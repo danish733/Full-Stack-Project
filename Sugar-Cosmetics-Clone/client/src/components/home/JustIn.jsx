@@ -160,6 +160,9 @@ const Mrp = styled(Typography)({
   });
 
 function JustIn({products}) {
+  if (!products) {
+    return null; 
+  }
   return (
     <div>
       <SlideWrapper>
