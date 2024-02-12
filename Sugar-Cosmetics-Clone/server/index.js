@@ -5,9 +5,10 @@ const connection = require('./database/db');
 const  defaultData  = require('./default');
 const {router} = require('./routes/route')
 const cors = require('cors')
+require('dotenv').config()
 
 const app = express();
-const port = 8080;
+const port = process.env.port || 8080;
 
 app.use(cors())
 app.use(express.json())

@@ -161,6 +161,11 @@ const Discount = styled(Typography)({
 });
 
 function Slide({ products }) {
+
+  if (!products) {
+    return null; 
+  }
+
   return (
     <SlideWrapper>
       <TypographyComponent text="BESTSELLERS" />
